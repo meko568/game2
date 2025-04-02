@@ -348,4 +348,13 @@ body {
     .kind div {
         display: none;
     }
+
+    .word {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .word span {
+        margin: 0 5px !important;
+    }
 }
