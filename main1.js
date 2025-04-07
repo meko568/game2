@@ -1,4 +1,4 @@
-let letter = "abcdefghijklmnopqrstupvwxyz"
+let letter = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي"
 let arr = Array.from(letter);
 let conta = document.querySelector(".words");
 arr.forEach(function (e) {
@@ -8,10 +8,10 @@ arr.forEach(function (e) {
     conta.appendChild(span);
 })
 let words = {
-    programming: ["php", "javascript", "go", "scale", "fortran", "r", "mysql", "python"],
-    movies: ["prestige", "inception", "interstaller", "whiplash", "memnto", "coco", "up"],
-    people: ["alpert einstein", "hitchcock", "alexander", "celepatra", "mahatma ghandi"],
-    countries: ["yamen", "syria", "palestine", "egypt", "qutar", "bahrain"],
+    جماد: ["كرسي", "كتاب", "قلم", "هاتف", "مفتاح", "باب", "سرير", "حاسوب", "مصباح", "ساعة"],
+    افلام: ["امبراطوريه ميم", "اكس لارج", "طير انت", "الممر", "الجزيره", "ساعه ونص", "عسل اسود"],
+    الطبيعه: ["جبل ", "نهر", "بحر", "شمس", "شجره", "حجر", "مطر", "ريح", "رمل", "ارض"],
+    دول: ["المغرب", "سوريا", "فلسطين", "لبنان", "البحرين", "قطر", "مصر"],
 }
 let allkeys = Object.keys(words);
 let randomnumber = Math.floor(Math.random() * allkeys.length);
@@ -19,6 +19,7 @@ let randomkey = allkeys[randomnumber];
 let randominwords = words[`${randomkey}`];
 let randominkey = Math.floor(Math.random() * randominwords.length);
 let randomword = words[`${randomkey}`][randominkey]
+console.log(randomword)
 document.querySelector(".kind span").innerHTML = randomkey;
 for (let i = 0; i < randomword.length; i++) {
     let span = document.createElement("span");
