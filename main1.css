@@ -442,7 +442,7 @@ a:hover {
 
 .kind span {
     color: rgb(230, 39, 1);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .word {
@@ -459,12 +459,12 @@ a:hover {
 }
 
 .word span:not(.space) {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.2rem;
+    font-size: 40px;
     font-weight: 600;
     color: #2c3e50;
     position: relative;
@@ -494,9 +494,9 @@ a:hover {
     align-items: center;
     background-color: #009688;
     color: white;
-    width: 100px;
-    font-size: 60px;
-    height: 100px;
+    width: 70px;
+    font-size: 40px;
+    height: 70px;
     padding: 20px;
     border-radius: 6px;
     text-transform: capitalize;
@@ -584,9 +584,9 @@ a:hover {
 
 @media (max-width:767px) {
     .letter-box {
-        width: 60px;
-        height: 60px;
-        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
 
     .word span:not(.space) {
